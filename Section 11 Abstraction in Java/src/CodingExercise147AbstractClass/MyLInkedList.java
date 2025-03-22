@@ -14,7 +14,11 @@ public class MyLInkedList implements NodeList{
 
     @Override
     public boolean addItem(ListItem item) {
-
+        if(this.root==null){
+            this.root=item;
+            return  true;
+        }
+        return false;
     }
 
     @Override
