@@ -43,7 +43,7 @@ public class Main {
             while(thread.isAlive()){
                 try{
                     Thread.sleep(1000);
-                    if(System.currentTimeMillis()-now>2000){
+                    if(System.currentTimeMillis()-now>8000){
                         thread.interrupt();
                     }
                 }catch (InterruptedException e){
